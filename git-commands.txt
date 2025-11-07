@@ -1,0 +1,22 @@
+
+# Git commands to initialize repo and push to GitHub
+
+# 1. Initialize local repo
+git init
+git add .
+git commit -m "Initial commit: StoreMart starter"
+
+# 2. Create remote repo on GitHub (use your GitHub account)
+# Replace <USERNAME> and <REPO> with your values
+# Example: REPO=storemart
+# You can create the repo on github.com UI, or use gh CLI:
+# gh repo create <USERNAME>/<REPO> --public --source=. --remote=origin --push
+
+# 3. If you created remote manually, add it and push:
+git remote add origin https://github.com/Atharva0369/storemart.git
+git branch -M main
+git push -u origin main
+
+git remote add origin https://github.com/<YOUR_USERNAME>/storemart.git
+git branch -M main
+git push -u origin main
